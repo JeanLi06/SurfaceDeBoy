@@ -1,7 +1,12 @@
-html, body {
+body {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  background: #eee;
+}
+
+h3 {
+  font-style: italic;
 }
 
 canvas {
