@@ -1,23 +1,31 @@
 body {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background: #eee;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #eee;
+}
+
+header {
+    line-height: 1em;
 }
 
 h3 {
-  font-style: italic;
+    font-style: italic;
 }
 
 canvas {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right:auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+    display: block;
+    position: absolute;
+    right: 0;
 }
 
 main {
-  text-align: center;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    flex-flow: column wrap;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
 }
