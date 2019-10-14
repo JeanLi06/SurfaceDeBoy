@@ -2,7 +2,6 @@
 
 // On impose une taille de canvas maximum, afin de contenir le temps de calcul.
 const SIZE_CANVAS = window.innerWidth > 768 ? 700 : window.innerHeight - 10;
-
 const CURSORS_MARGIN = 50;
 const Y_OFFSET = 150;
 var slider1, slider2, slider3, slider4, slider5, sliderZoom;
@@ -23,7 +22,7 @@ function setup() {
     slider2.position(20, Y_OFFSET + CURSORS_MARGIN * 2);
     slider2.style('width', '200px');
 
-    sliderZoom = createSlider(10, 200, 120);
+    sliderZoom = createSlider(10, 200, 140);
     sliderZoom.position(20, Y_OFFSET + CURSORS_MARGIN * 3);
     sliderZoom.style('width', '200px');
 
