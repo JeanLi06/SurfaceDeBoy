@@ -1,9 +1,9 @@
 "use strict";
 
 // On impose une taille de canvas maximum, afin de contenir le temps de calcul.
-const SIZE_CANVAS = window.innerWidth > 768 ? 700 : window.innerHeight - 10;
-const CURSORS_MARGIN = 50;
-const Y_OFFSET = 150;
+var SIZE_CANVAS = window.innerHeight > 768 ? 700 : window.innerHeight - 10;
+var CURSORS_MARGIN = 50;
+var Y_OFFSET = 150;
 var slider1, slider2, slider3, slider4, slider5, sliderZoom;
 
 function setup() {
@@ -61,7 +61,7 @@ function draw() {
 
     var currentPointX = SIZE_CANVAS / 2;
     var currentPointY = SIZE_CANVAS / 2;
-    for (var mu = 0; mu < 3.141; mu += 0.05) {
+    for (var mu = 0; mu < 3.141; mu += 0.025) {
         // p++;
         d = sliderZoom.value() + 4.794 * Math.sin(6 * mu - p3);
         e = 6.732 * Math.sin(slider3.value() / 10 * mu - p6);
@@ -72,7 +72,7 @@ function draw() {
         c3 = (slider5.value() / 10 * d * e) / c2;
         cm = Math.cos(mu);
         sm = Math.sin(mu);
-        for (var te = 0; te < 6.288; te += 0.06) {
+        for (var te = 0; te < 6.288; te += 0.03) {
             tc = a * Math.cos(te);
             ts = b * Math.sin(te);
             x1 = c3 + tc - ts;
